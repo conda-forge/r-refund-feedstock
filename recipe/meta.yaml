@@ -36,7 +36,7 @@ requirements:
     - r-lattice
     - r-lme4
     - r-magic
-    - r-mgcv >=1.8_12
+    - r-mgcv >=1.8_23
     - r-nlme
     - r-pbs
   run:
@@ -52,7 +52,7 @@ requirements:
     - r-lattice
     - r-lme4
     - r-magic
-    - r-mgcv >=1.8_12
+    - r-mgcv >=1.8_23
     - r-nlme
     - r-pbs
 
@@ -63,10 +63,11 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=refund
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: Methods for regression for functional data, including function-on-scalar, scalar-on-function, and function-on-function regression. Some of the functions are applicable to image data.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
