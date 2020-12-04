@@ -1,4 +1,4 @@
-{% set version = "0.1-22" %}
+{% set version = "0.1-23" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/refund_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/refund/refund_{{ version }}.tar.gz
-  sha256: b7774aaedc0b7854e50b7143a9aa47f3256d4c4bd1a91ef145d4e5dea387170c
+  sha256: 7a469c34aa2e8f2f5940bbb912828c989723e2c94df1b61a3c5a5eaf704b5ded
 
 build:
   merge_build_host: true  # [win]
@@ -36,7 +36,7 @@ requirements:
     - r-lattice
     - r-lme4
     - r-magic
-    - r-mgcv >=1.8_12
+    - r-mgcv >=1.8_23
     - r-nlme
     - r-pbs
   run:
@@ -52,7 +52,7 @@ requirements:
     - r-lattice
     - r-lme4
     - r-magic
-    - r-mgcv >=1.8_12
+    - r-mgcv >=1.8_23
     - r-nlme
     - r-pbs
 
@@ -63,10 +63,11 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=refund
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: Methods for regression for functional data, including function-on-scalar, scalar-on-function, and function-on-function regression. Some of the functions are applicable to image data.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
