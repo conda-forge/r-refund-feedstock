@@ -1,11 +1,11 @@
-About r-refund
-==============
+About r-refund-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-refund-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=refund
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-refund-feedstock/blob/main/LICENSE.txt)
 
 Summary: Methods for regression for functional data, including function-on-scalar, scalar-on-function, and function-on-function regression. Some of the functions are applicable to image data.
 
