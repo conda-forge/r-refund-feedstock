@@ -1,4 +1,4 @@
-{% set version = "0.1-29" %}
+{% set version = "0.1-30" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/refund_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/refund/refund_{{ version }}.tar.gz
-  sha256: 8a7ea4003b3807f890a6e07209ed41e671a8b68333b35ced5fdd881aca8da838
+  sha256: 01caf0f62776dd41f4c66b321e70841f65ac10572b4bc2f2ae11e7c55dd3bfa6
 
 build:
   merge_build_host: true  # [win]
