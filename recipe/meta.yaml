@@ -1,15 +1,15 @@
-{% set version = "0.1-38" %}
+{% set version = "0.1-40" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
   name: r-refund
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
     - {{ cran_mirror }}/src/contrib/refund_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/refund/refund_{{ version }}.tar.gz
-  sha256: 13bf3ac85198197e20e96f72b9652f2f529fae5e3099e0f146a92d10f313b420
+  sha256: 7dc5b489d6cecbf25fd6b511658ca6563507472731a7b687c780a369c6f660c0
 
 build:
   number: 0
